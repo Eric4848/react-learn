@@ -26,13 +26,14 @@
 // import Link from "next/link";
 import Movie from "../components/movie";
 import styles from "../styles/home.module.css";
+import { API_URL } from "../constants";
 
 export const metadata = {
   title: "Home",
 };
 
 // Next.js 방식fetch
-export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
+// export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
 
 async function getMovies() {
   // await new Promise((resolve) => setTimeout(resolve, 5000))   // 5초 지연시키는 함수
